@@ -2479,6 +2479,7 @@ div h1.tieude {
   height: 100px;
   position: relative;
   margin-right: auto;
+margin-bottom: 260px;
   background-color: transparent;
   -ms-transform: rotate(-45deg); /* IE 9 */
   -webkit-transform: rotate(-45deg); /* Safari 3-8 */
