@@ -2470,16 +2470,19 @@ body:after {
 .tieude{
   font-family: Lobster;
   color: #FFB91F;
+
   
 }
 
-h1.tieude {
-  width: 500px;
-  height: 300px;
-  margin-left: -200px;
+div h1.tieude {
+  width: 400px;
+  height: 100px;
+  position: relative;
+  margin-right: auto;
   background-color: transparent;
   -ms-transform: rotate(-45deg); /* IE 9 */
   -webkit-transform: rotate(-45deg); /* Safari 3-8 */
   transform: rotate(-45deg);
+  
 
 }
