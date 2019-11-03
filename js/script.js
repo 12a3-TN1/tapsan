@@ -89,3 +89,10 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+var vid = document.getElementById("myaudio");
+function enableAutoplay() { 
+  vid.autoplay = true;
+  vid.load();
+}
