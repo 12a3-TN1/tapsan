@@ -40,9 +40,9 @@
 
 body {
   color: #777777;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
   line-height: 1.5em;
   position: relative;
 }
@@ -107,13 +107,20 @@ a, a:focus, a:hover {
 }
 
 h1, h2, h3,
-h4, h5, h6 {
+h4, h6 {
   font-family: "Poppins", sans-serif;
   color: #222222;
   line-height: 1.5em;
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 500;
+}
+h5{
+  font-weight: 300;
+  text-align: right; 
+  font-style: italic;
+  padding-right: 140px;
+  
 }
 
 .h1, .h2, .h3,
@@ -142,7 +149,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 h6, .h6 {
@@ -366,6 +373,7 @@ td, th {
 
 .mb-20 {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .mb-25 {
@@ -453,7 +461,7 @@ td, th {
 }
 
 .pt-100 {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .pt-150 {
@@ -509,7 +517,7 @@ td, th {
 }
 
 .pb-100 {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .pb-150 {
@@ -733,10 +741,10 @@ td, th {
   margin-right: 0;
 }
 
-.box-shadows, .view-details {
-  -webkit-box-shadow: 20px 3px 50px -25px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 20px 3px 50px -25px rgba(0, 0, 0, 0.75);
-  box-shadow: 20px 3px 50px -25px rgba(0, 0, 0, 0.75);
+.box-shadows, .view-details, #myBtn {
+  -webkit-box-shadow: 20px 3px 70px -25px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 20px 3px 70px -25px rgba(0, 0, 0, 0.75);
+  box-shadow: 20px 3px 70px -25px rgba(0, 0, 0, 0.75);
 }
 
 .sample-text-area {
@@ -769,9 +777,6 @@ h4 {
   font-size: 18px;
 }
 
-h5 {
-  font-size: 16px;
-}
 
 h6 {
   font-size: 14px;
@@ -1859,8 +1864,8 @@ header {
 }
 
 .menu-bar span {
-  color: #222222;
-  font-size: 24px;
+  color: #121212;
+  font-size: 27px;
 }
 
 .main-menubar {
@@ -1889,20 +1894,21 @@ nav {
   }
 }
 
-nav.hide {
+nav.hide{
   transform: scale(0);
 }
 
 nav a {
-  font-size: 12px;
-  font-weight: 500;
+  font-size: 13px;
+  font-weight: 600;
   text-transform: uppercase;
-  color: #777777;
+  color: #5F6460;
   margin: 0 25px;
   display: inline-block;
   margin: 0 0px;
   display: inline-block;
-  padding: 34px;
+  padding: 25px;
+
 }
 
 nav a:hover {
@@ -1996,7 +2002,7 @@ body:after {
   background-image: -ms-linear-gradient(135deg, #91d1ff 0%, #a387ff 100%);
 }
 
-.p2-gradient-bg, .feature-area, .subscription-area, .generic-banner {
+.p2-gradient-bg, .feature-area, .subscription-area {
   background-image: -moz-linear-gradient(135deg, #a387ff 0%, #91d1ff 100%);
   background-image: -webkit-linear-gradient(135deg, #a387ff 0%, #91d1ff 100%);
   background-image: -ms-linear-gradient(135deg, #a387ff 0%, #91d1ff 100%);
@@ -2392,7 +2398,7 @@ body:after {
 
 .footer-menu {
   display: inline-flex;
-  font-size: 14;
+  font-size: 13;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -2479,11 +2485,212 @@ div h1.tieude {
   height: 100px;
   position: relative;
   margin-right: auto;
-margin-bottom: 260px;
+  margin-bottom: 260px;
   background-color: transparent;
   -ms-transform: rotate(-45deg); /* IE 9 */
   -webkit-transform: rotate(-45deg); /* Safari 3-8 */
   transform: rotate(-45deg);
   
 
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+div #myBtn1 {
+  color: #a387ff;
+  background-color: #fff; /* Green */
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 8px 20px 0 rgba(0,0,0,0.19);
+  
+
+  padding: 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: Poppins;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+div #myBtn2 {
+  color: #a387ff;
+  background-color: #fff; /* Green */
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 8px 20px 0 rgba(0,0,0,0.19);
+  
+
+  padding: 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: Poppins;
+  margin: 2px 1px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+div #myBtn3 {
+  color: #a387ff;
+  background-color: #fff; /* Green */
+  border: none;
+  font-weight: 600;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 8px 20px 0 rgba(0,0,0,0.19);
+  
+
+  padding: 15px 100px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-family: Poppins;
+  margin: 2px 2px;
+  cursor: pointer;
+}
+
+.generic-banner-about{
+  background-image: url("../img/gioithieu-bg.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+}
+.generic-banner-2011{
+  background-image: url("../img/img18.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.generic-banner-2212{
+  background-image: url("../img/quandoi-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.generic-banner-gallery{
+  background-image: url("../img/img17.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*backtotop*/
+#topbutton {
+  
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  z-index: 99;
+  font-size: 25px;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: #FF9800;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+  
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+}
+
+#topbutton:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+
+.single-defination img{
+  height: 80%;
+  width: 80%;
+  padding-left: 20%;
+  padding-top: 10%;
+}
+
+.single-defination .info{
+  font-family: Roboto;
+  font-weight: 300px;
+  font-size: 14px;
+  color: #fff;
+  padding-top: 10%;
+  vertical-align: bottom;
 }

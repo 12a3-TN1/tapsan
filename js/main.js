@@ -58,4 +58,23 @@ $(document).ready(function(){
         .appendTo('#slideshow');
         },  6000);
 
+
+    $(function(){
+    $('.image-link').venobox({
+         framewidth: '800px',        // default: ''
+        frameheight: '530px',       // default: ''
+                 
+        bgcolor: '#5dff5e',         // default: '#fff'
+            // default: 'title'
+                   // default: false
+        infinigall: true            // default: false
+       
+
+
+    });
+
+});
+    
+
+
  });

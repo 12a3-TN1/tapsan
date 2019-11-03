@@ -510,7 +510,7 @@ mark,
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 95%;
   height: auto;
 }
 
@@ -907,8 +907,17 @@ pre code {
     max-width: 25%;
   }
   .col-md-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+.col-md-4 {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+  
+  .col-md-44 {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
   .col-md-5 {
     flex: 0 0 41.66667%;
