@@ -510,6 +510,10 @@ mark,
 }
 
 .img-fluid {
+  max-width: 80%;
+  height: auto;
+}
+.img-fluid2 {
   max-width: 60%;
   height: auto;
 }
